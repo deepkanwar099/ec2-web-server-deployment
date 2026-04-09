@@ -10,7 +10,9 @@ This project is not just about deployment — I also handled a situation where t
 ---
 
 ## 🧠 Problem Statement
-XYZ Media Solutions wanted to move their website to the cloud to improve availability and reduce infrastructure management.
+XYZ Media Solutions wanted to move their static website to the cloud to improve availability and reduce manual server management.
+
+The requirement was to deploy a simple, secure, and automated web server that could be accessed publicly.
 
 ---
 
@@ -98,6 +100,15 @@ Restarted Apache using:
 ```bash
 sudo systemctl start httpd
 ```
+## 🤖 Use of AI
+
+During this project, I used AI tools to:
+- Troubleshoot SSH connection errors  
+- Identify misconfigurations in security group rules  
+- Understand why the website was not loading even when the instance was running  
+
+AI helped me debug issues faster, but I verified and implemented the fixes myself.
+
 ## 🎯 What I Learned
 
 - Deploying EC2 web server from scratch  
