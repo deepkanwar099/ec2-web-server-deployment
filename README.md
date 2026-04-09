@@ -10,9 +10,12 @@ This project is not just about deployment — I also handled a situation where t
 ---
 
 ## 🧠 Problem Statement
-XYZ Media Solutions wanted to move their static website to the cloud to improve availability and reduce manual server management.
+XYZ Media Solutions wanted to move their static website to the cloud to reduce manual server work and make it publicly accessible.
 
-The requirement was to deploy a simple, secure, and automated web server that could be accessed publicly.
+My task was to set up a simple and secure web server on AWS that could be accessed over the internet and required minimal manual setup.
+
+### My Role
+I was responsible for setting up the EC2 instance, configuring security groups, automating the web server setup, and troubleshooting issues when the website became inaccessible.
 
 ---
 
@@ -91,6 +94,12 @@ At one point, the website stopped loading even though the EC2 instance was still
 - Checked Apache service → found it was stopped  
 - Checked port 80 → nothing was listening  
 
+### Where AI helped
+I used AI to guide my debugging process by:
+- Suggesting possible reasons why a website might not load even when the instance is running  
+- Helping identify that the issue could be related to the Apache service  
+- Confirming the commands to check service status and port usage  
+
 ### Root Cause
 Apache web server was not running.
 
@@ -100,14 +109,6 @@ Restarted Apache using:
 ```bash
 sudo systemctl start httpd
 ```
-## 🤖 Use of AI
-
-During this project, I used AI tools to:
-- Troubleshoot SSH connection errors  
-- Identify misconfigurations in security group rules  
-- Understand why the website was not loading even when the instance was running  
-
-AI helped me debug issues faster, but I verified and implemented the fixes myself.
 
 ## 🎯 What I Learned
 
