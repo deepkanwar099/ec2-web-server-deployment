@@ -78,7 +78,7 @@ echo "<p>Server Name: $(hostname -f)</p>" >> /var/www/html/index.html
 
 ---
 
-## 🧪 Troubleshooting Incident
+## 🧪 Troubleshooting: Website Not Loading
 
 ### What happened?
 At one point, the website stopped loading even though the EC2 instance was still running.
@@ -97,3 +97,17 @@ Restarted Apache using:
 
 ```bash
 sudo systemctl start httpd
+```
+## 🎯 What I Learned
+
+- Deploying EC2 web server from scratch  
+- Configuring secure access using security groups  
+- Using IAM roles instead of credentials  
+- Automating setup with user data scripts  
+- Debugging real-world service failures  
+- Working with Linux commands and services
+
+
+## 🔥 Conclusion
+
+This project helped me understand how deployment, security, and troubleshooting come together in real-world cloud environments. 
