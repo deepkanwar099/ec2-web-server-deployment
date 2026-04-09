@@ -1,5 +1,5 @@
-# SSH
-ssh -i xyz-web-key.pem ec2-user@public-ip
+```bash
+ssh -i xyz-web-key.pem ec2-user@<public-ip>
 
 # Install Apache
 yum update -y
