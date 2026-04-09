@@ -20,7 +20,7 @@ Instance was in **running state**, so the issue was not with the server being st
 
 ---
 
-g### 3. Checked Apache Service Status
+### 3. Checked Apache Service Status
 ```bash
 systemctl status httpd
 ```
@@ -29,7 +29,7 @@ systemctl status httpd
 ```bash
 sudo netstat -tulpn | grep 80
 ```
-Where Ai Helped 
+### Where Ai Helped 
 - Suggested possible reasons why a website might not load even when the instance is running  
 - Helped identify that the issue could be related to the Apache service  
 - Guided which commands to use for checking service status and port usage  
@@ -45,3 +45,8 @@ Apache web server was not running.
 ```bash
 sudo systemctl start httpd
 
+---
+```
+### Verification
+```bash
+systemctl status httpd
