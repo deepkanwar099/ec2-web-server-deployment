@@ -29,7 +29,7 @@ systemctl status httpd
 ```bash
 sudo netstat -tulpn | grep 80
 ```
-### Where Ai Helped 
+### Where AI Helped 
 - Suggested possible reasons why a website might not load even when the instance is running  
 - Helped identify that the issue could be related to the Apache service  
 - Guided which commands to use for checking service status and port usage  
